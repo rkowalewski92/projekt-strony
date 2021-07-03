@@ -1,4 +1,51 @@
 #products {
     display: flex;
+    flex-wrap: wrap;
  
+}
+#products div {
+    width: 25%;
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+}
+#products div img {
+    width: 100%;
+    transition: opacity .3s;
+}
+
+#products div .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .8);
+    opacity: 0;
+    transition: all .3s;
+}
+#products div:hover .bg{
+    opacity: 1;
+}
+#products div:hover .img{
+    width: 150%;
+}
+#header {
+    position: relative;
+	height: 200px;
+	background: #747375;
+	bottom: 0;
+}
+
+
+#footer {
+    position: relative;
+	height: 100px;
+	background: #4d4b4b;
+	bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
 }
